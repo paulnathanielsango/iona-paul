@@ -1,0 +1,21 @@
+key,productType.typeId,productType.key,name.en,slug.en,description.en,masterVariant.key,masterVariant.sku,published
+aura-noise-cancelling-headphones,product-type,wireless-bluetooth-headphones,Aura Noise Cancelling Headphones,aura-noise-cancelling-headphones,Premium Bluetooth headphones with active noise cancellation,aura-noise-cancelling-headphones,AURA-NC-001,true
+sonic-pro-wireless-headphones,product-type,wireless-bluetooth-headphones,Sonic Pro Wireless Headphones,sonic-pro-wireless-headphones,Wireless headphones with deep bass,sonic-pro-wireless-headphones,SONIC-002,true
+bassmax-bluetooth-headphones,product-type,wireless-bluetooth-headphones,BassMax Bluetooth Headphones,bassmax-bluetooth-headphones,Music focused wireless headphones,bassmax-bluetooth-headphones,BASS-003,true
+traveltune-anc-headphones,product-type,wireless-bluetooth-headphones,TravelTune ANC Headphones,traveltune-anc-headphones,Travel headphones with long battery life,traveltune-anc-headphones,TRAVEL-004,true
+airwave-wireless-headphones,product-type,wireless-bluetooth-headphones,AirWave Wireless Headphones,airwave-wireless-headphones,Comfortable everyday wireless headphones,airwave-wireless-headphones,AIR-005,true
+pulse-smart-watch,product-type,smart-watches,Pulse Smart Watch,pulse-smart-watch,Fitness tracking smartwatch,pulse-smart-watch,PULSE-001,true
+fittrack-pro-watch,product-type,smart-watches,FitTrack Pro Watch,fittrack-pro-watch,GPS fitness smartwatch,fittrack-pro-watch,FIT-002,true
+activelife-smart-watch,product-type,smart-watches,ActiveLife Smart Watch,activelife-smart-watch,Health monitoring smartwatch,activelife-smart-watch,ACTIVE-003,true
+horizon-gps-watch,product-type,smart-watches,Horizon GPS Watch,horizon-gps-watch,Outdoor GPS smartwatch,horizon-gps-watch,HORIZON-004,true
+neosport-smart-watch,product-type,smart-watches,NeoSport Smart Watch,neosport-smart-watch,Sports smartwatch,neosport-smart-watch,NEO-005,true
+usb-c-docking-station,product-type,laptop-accessories,USB-C Docking Station,usb-c-docking-station,Multi port laptop dock,usb-c-docking-station,DOCK-001,true
+portable-ssd-1tb,product-type,laptop-accessories,Portable SSD 1TB,portable-ssd-1tb,External storage device,portable-ssd-1tb,SSD-002,true
+laptop-cooling-pad,product-type,laptop-accessories,Laptop Cooling Pad,laptop-cooling-pad,Laptop cooling accessory,laptop-cooling-pad,COOL-003,true
+wireless-presenter,product-type,laptop-accessories,Wireless Presenter,wireless-presenter,Presentation remote,wireless-presenter,PRES-004,true
+usb-c-multiport-hub,product-type,laptop-accessories,USB-C Multiport Hub,usb-c-multiport-hub,USB connectivity hub,usb-c-multiport-hub,HUB-005,true
+ergo-office-chair,product-type,home-office-equipment,Ergo Office Chair,ergo-office-chair,Ergonomic office chair,ergo-office-chair,CHAIR-001,true
+led-desk-lamp,product-type,home-office-equipment,LED Desk Lamp,led-desk-lamp,Adjustable office lamp,led-desk-lamp,LAMP-002,true
+adjustable-standing-desk,product-type,home-office-equipment,Adjustable Standing Desk,adjustable-standing-desk,Height adjustable desk,adjustable-standing-desk,DESK-003,true
+hd-webcam,product-type,home-office-equipment,HD Webcam,hd-webcam,Camera for meetings,hd-webcam,CAM-004,true
+wireless-keyboard,product-type,home-office-equipment,Wireless Keyboard,wireless-keyboard,Slim wireless keyboard,wireless-keyboard,KEY-005,true

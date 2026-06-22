@@ -1,0 +1,2 @@
+key,productType.typeId,productType.key,name.en,slug.en,description.en,masterVariant.id,masterVariant.sku,published
+test-headphone,product-type,wireless-bluetooth-headphones,Test Headphone,test-headphone,Test product,test-headphone-master,TEST-001,true
