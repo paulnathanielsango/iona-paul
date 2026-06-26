@@ -3,7 +3,9 @@
     "home": "Home",
     "cart": "Cart",
     "cartWithCount": "Cart ({count})",
-    "selectLanguage": "Select language"
+    "selectLanguage": "Select language",
+    "localeSwitchBlocked": "Can't switch market",
+    "localeSwitchBlockedDescription": "Your cart uses {currency}. Clear your cart or finish shopping before switching to a different currency."
   },
   "plp": {
     "heroTitle": "Discover our",
@@ -49,10 +51,13 @@
     "estimatedTotal": "Estimated total",
     "checkout": "Proceed to checkout",
     "checkoutToastTitle": "Checkout coming soon",
-    "checkoutToastDescription": "This is a demo storefront — payment and delivery aren't wired up yet. Your cart still works for browsing and quantity updates.",
+    "checkoutToastDescription": "This is a demo storefront. Payment and delivery aren't wired up yet. Your cart still works for browsing and quantity updates.",
     "secureCheckout": "Secure checkout · VAT calculated at checkout",
     "remove": "Remove",
+    "updateFailed": "Could not update quantity",
+    "removeFailed": "Could not remove item",
     "promoCode": "Promo code",
+    "promoDemoNote": "Demo only. Discount is visual only, not sent to commercetools. Resets on refresh.",
     "promoPlaceholder": "Enter code e.g. IONA-PAUL",
     "promoApply": "Apply",
     "promoApplied": "Promo code applied",
@@ -73,22 +78,27 @@
     "about": "About IONA",
     "aboutDescription": "A warm, minimal demo storefront built for the IONA take-home exam. It includes a product listing, product detail, and cart.",
     "rights": "All rights reserved.",
-    "newArrivalsToastTitle": "New arrivals — coming soon",
+    "newArrivalsToastTitle": "New arrivals coming soon",
     "newArrivalsToastDescription": "A dedicated new arrivals page isn't live yet. Browse the full collection from the home page for now.",
-    "bestsellersToastTitle": "Bestsellers — coming soon",
+    "bestsellersToastTitle": "Bestsellers coming soon",
     "bestsellersToastDescription": "Our bestsellers page is on the way. Explore all products from the shop in the meantime.",
-    "giftIdeasToastTitle": "Gift ideas — coming soon",
+    "giftIdeasToastTitle": "Gift ideas coming soon",
     "giftIdeasToastDescription": "Curated gift guides are in the works. Check back soon for hand-picked ideas.",
     "shippingReturnsToastTitle": "Delivery & returns",
     "shippingReturnsToastDescription": "Policy pages aren't wired up in this demo. Eligible orders include free delivery over £75 and 30-day easy returns.",
-    "sizeGuideToastTitle": "Size guide — coming soon",
+    "sizeGuideToastTitle": "Size guide coming soon",
     "sizeGuideToastDescription": "Fit and sizing guides aren't available yet in this demo storefront.",
-    "contactUsToastTitle": "Contact us — coming soon",
+    "contactUsToastTitle": "Contact us coming soon",
     "contactUsToastDescription": "Support isn't connected in this demo. In production, this would link to email, chat, or a help centre."
   },
   "error": {
     "title": "Something went wrong",
     "description": "We could not load the storefront. Please try again.",
     "retry": "Try again"
+  },
+  "notFound": {
+    "title": "This page is no longer available.",
+    "description": "Don't worry, you can still discover great products.",
+    "backHome": "Back to shop"
   }
 }

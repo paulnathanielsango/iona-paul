@@ -36,25 +36,39 @@ export async function updateLineQuantityAction(
   lineItemId: string,
   quantity: number
 ) {
-  const cart = await getActiveCart(locale);
-  if (!cart) {
-    return { success: false as const, error: 'Cart not found' };
-  }
+  try {
+    const cart = await getActiveCart(locale);
+    if (!cart) {
+      return { success: false as const, error: 'Cart not found' };
+    }
 
-  const updated = await changeLineItemQuantity(cart.id, locale, lineItemId, quantity);
-  await setCartId(updated.id);
-  revalidateCartPaths(locale);
-  return { success: true as const };
+    const updated = await changeLineItemQuantity(cart.id, locale, lineItemId, quantity);
+    await setCartId(updated.id);
+    revalidateCartPaths(locale);
+    return { success: true as const };
+  } catch (error) {
+    return {
+      success: false as const,
+      error: getCtErrorMessage(error),
+    };
+  }
 }
 
 export async function removeLineItemAction(locale: string, lineItemId: string) {
-  const cart = await getActiveCart(locale);
-  if (!cart) {
-    return { success: false as const, error: 'Cart not found' };
-  }
+  try {
+    const cart = await getActiveCart(locale);
+    if (!cart) {
+      return { success: false as const, error: 'Cart not found' };
+    }
 
-  const updated = await removeLineItem(cart.id, locale, lineItemId);
-  await setCartId(updated.id);
-  revalidateCartPaths(locale);
-  return { success: true as const };
+    const updated = await removeLineItem(cart.id, locale, lineItemId);
+    await setCartId(updated.id);
+    revalidateCartPaths(locale);
+    return { success: true as const };
+  } catch (error) {
+    return {
+      success: false as const,
+      error: getCtErrorMessage(error),
+    };
+  }
 }

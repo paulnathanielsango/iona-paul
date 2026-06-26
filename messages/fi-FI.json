@@ -3,12 +3,14 @@
     "home": "Koti",
     "cart": "Ostoskori",
     "cartWithCount": "Ostoskori ({count})",
-    "selectLanguage": "Valitse kieli"
+    "selectLanguage": "Valitse kieli",
+    "localeSwitchBlocked": "Markkinaa ei voi vaihtaa",
+    "localeSwitchBlockedDescription": "Ostoskorisi käyttää valuuttaa {currency}. Tyhjennä ostoskori tai viimeistele ostokset ennen valuutan vaihtoa."
   },
   "plp": {
     "heroTitle": "Tutustu",
     "heroAccent": "kokoelmaamme",
-    "heroSubtitle": "Huolella valittuja koti- ja lifestyle-tuotteita — kestäviä ja helposti rakastettavia.",
+    "heroSubtitle": "Huolella valittuja koti- ja lifestyle-tuotteita, kestäviä ja helposti rakastettavia.",
     "gridLabel": "Tuotteet",
     "productCount": "{count, plural, =0 {Ei tuotteita} one {# tuote} other {# tuotetta}}",
     "emptyTitle": "Tuotteita ei löytynyt",
@@ -49,10 +51,13 @@
     "estimatedTotal": "Arvioitu yhteensä",
     "checkout": "Siirry kassalle",
     "checkoutToastTitle": "Kassa tulossa pian",
-    "checkoutToastDescription": "Tämä on demokauppa — maksu ja toimitus eivät ole vielä käytössä. Ostoskori toimii silti selailuun ja määrän päivityksiin.",
+    "checkoutToastDescription": "Tämä on demokauppa. Maksu ja toimitus eivät ole vielä käytössä. Ostoskori toimii silti selailuun ja määrän päivityksiin.",
     "secureCheckout": "Turvallinen kassa · Verot lasketaan kassalla",
     "remove": "Poista",
+    "updateFailed": "Määrää ei voitu päivittää",
+    "removeFailed": "Tuotetta ei voitu poistaa",
     "promoCode": "Alekoodi",
+    "promoDemoNote": "Vain demo. Alennus on visuaalinen, ei lähetetä commercetoolsiin. Nollautuu sivun päivityksellä.",
     "promoPlaceholder": "Syötä koodi esim. IONA-PAUL",
     "promoApply": "Käytä",
     "promoApplied": "Alekoodi käytetty",
@@ -71,24 +76,29 @@
     "sizeGuide": "Kokotaulukko",
     "contactUs": "Ota yhteyttä",
     "about": "Tietoa IONASTA",
-    "aboutDescription": "Lämmin ja minimalistinen demo-verkkokauppa IONA take-home -kokeeseen — tuotelistaus, tuotetiedot ja ostoskori.",
+    "aboutDescription": "Lämmin ja minimalistinen demo-verkkokauppa IONA take-home -kokeeseen. Tuotelistaus, tuotetiedot ja ostoskori.",
     "rights": "Kaikki oikeudet pidätetään.",
-    "newArrivalsToastTitle": "Uutuudet — tulossa pian",
+    "newArrivalsToastTitle": "Uutuudet tulossa pian",
     "newArrivalsToastDescription": "Erillinen uutuussivu ei ole vielä käytössä. Selaa toistaiseksi koko kokoelmaa etusivulta.",
-    "bestsellersToastTitle": "Suosituimmat — tulossa pian",
+    "bestsellersToastTitle": "Suosituimmat tulossa pian",
     "bestsellersToastDescription": "Suosituimmat-sivu on tulossa. Tutustu sillä välin kaikkiin tuotteisiin kaupassa.",
-    "giftIdeasToastTitle": "Lahjaideat — tulossa pian",
+    "giftIdeasToastTitle": "Lahjaideat tulossa pian",
     "giftIdeasToastDescription": "Kuratoidut lahjaoppaat ovat työn alla. Tarkista pian uudelleen.",
     "shippingReturnsToastTitle": "Toimitus ja palautukset",
     "shippingReturnsToastDescription": "Käytäntösivut eivät ole käytössä tässä demossa. Kelpoiset tilaukset sisältävät ilmaisen toimituksen yli 75 € ja 30 päivän palautusoikeuden.",
-    "sizeGuideToastTitle": "Kokotaulukko — tulossa pian",
+    "sizeGuideToastTitle": "Kokotaulukko tulossa pian",
     "sizeGuideToastDescription": "Koko- ja istuvuusoppaat eivät ole vielä saatavilla tässä demokaupassa.",
-    "contactUsToastTitle": "Ota yhteyttä — tulossa pian",
+    "contactUsToastTitle": "Ota yhteyttä tulossa pian",
     "contactUsToastDescription": "Tuki ei ole kytketty tässä demossa. Tuotannossa tämä linkittäisi sähköpostiin, chattiin tai ohjekeskukseen."
   },
   "error": {
     "title": "Jokin meni pieleen",
     "description": "Kauppaa ei voitu ladata. Yritä uudelleen.",
     "retry": "Yritä uudelleen"
+  },
+  "notFound": {
+    "title": "Tätä sivua ei ole enää saatavilla.",
+    "description": "Ei hätää, voit silti löytää upeita tuotteita.",
+    "backHome": "Takaisin kauppaan"
   }
 }

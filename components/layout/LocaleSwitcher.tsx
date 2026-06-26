@@ -30,9 +30,8 @@ export function LocaleSwitcher({ className }: LocaleSwitcherProps) {
 
   function handleSelect(nextLocale: string) {
     setOpen(false);
-    if (nextLocale !== locale) {
-      router.replace(pathname, { locale: nextLocale });
-    }
+    if (nextLocale === locale) return;
+    router.replace(pathname, { locale: nextLocale });
   }
 
   useEffect(() => {

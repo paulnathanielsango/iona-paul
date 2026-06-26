@@ -2,6 +2,7 @@
 
 import { useTransition } from 'react';
 import { useTranslations } from 'next-intl';
+import { toast } from 'sonner';
 import Image from 'next/image';
 import { Link } from '@/i18n/routing';
 import { useRouter } from '@/i18n/routing';
@@ -23,8 +24,15 @@ export function CartLineItem({ line, locale }: CartLineItemProps) {
 
   function handleRemove() {
     startTransition(async () => {
-      await removeLineItemAction(locale, line.id);
-      router.refresh();
+      const result = await removeLineItemAction(locale, line.id);
+      if (result.success) {
+        router.refresh();
+        return;
+      }
+
+      toast.error(t('removeFailed'), {
+        description: result.error,
+      });
     });
   }
 
@@ -46,7 +54,7 @@ export function CartLineItem({ line, locale }: CartLineItemProps) {
               alt={line.name}
               width={96}
               height={96}
-              className="h-24 w-24 rounded-lg border border-border bg-muted object-contain object-center p-1"
+              className="h-24 w-24 rounded-lg border border-border bg-white object-contain object-center p-1"
             />
           ) : (
             <div className="h-24 w-24 rounded-lg bg-muted" aria-hidden />

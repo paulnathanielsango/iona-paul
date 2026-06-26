@@ -4,8 +4,9 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { LocaleHtmlLang } from '@/components/layout/LocaleHtmlLang';
 import { Toaster } from '@/components/ui/sonner';
-import '../globals.css';
+import { Analytics } from '@vercel/analytics/react';
 
 type Props = {
   children: React.ReactNode;
@@ -26,15 +27,13 @@ export default async function LocaleLayout({ children, params }: Props) {
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className="h-full">
-      <body className="flex min-h-dvh flex-col bg-background text-foreground">
-        <NextIntlClientProvider messages={messages}>
-          <Header locale={locale} />
-          <main className="flex w-full flex-1 flex-col">{children}</main>
-          <Footer />
-          <Toaster position="top-center" richColors closeButton />
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider messages={messages}>
+      <LocaleHtmlLang locale={locale} />
+      <Header locale={locale} />
+      <main className="flex w-full flex-1 flex-col">{children}</main>
+      <Footer />
+      <Toaster position="top-center" richColors closeButton />
+      <Analytics />
+    </NextIntlClientProvider>
   );
 }

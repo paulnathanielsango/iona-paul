@@ -69,6 +69,7 @@ export function CartOrderSummary({ subtotal, locale }: CartOrderSummaryProps) {
 
   return (
     <>
+      <p className="mt-4 text-xs text-muted-foreground text-justify w-full whitespace-normal tracking-[-0.01em]">{t('promoDemoNote')}</p>
       <form className="mt-2" onSubmit={handleSubmit}>
         {promoApplied ? (
           <div className="mt-2 flex items-center justify-between gap-2 rounded-lg border border-accent/30 bg-accent/10 px-3 py-2.5 text-sm">

@@ -2,6 +2,8 @@
 
 import { Minus, Plus } from 'lucide-react';
 import { useTransition } from 'react';
+import { useTranslations } from 'next-intl';
+import { toast } from 'sonner';
 import { updateLineQuantityAction } from '@/app/actions/cart';
 import { useRouter } from '@/i18n/routing';
 import { Button } from '@/components/ui/button';
@@ -20,14 +22,22 @@ export function QuantityStepper({
   quantity,
   className,
 }: QuantityStepperProps) {
+  const t = useTranslations('cart');
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
 
   function update(nextQuantity: number) {
     if (nextQuantity < 1) return;
     startTransition(async () => {
-      await updateLineQuantityAction(locale, lineItemId, nextQuantity);
-      router.refresh();
+      const result = await updateLineQuantityAction(locale, lineItemId, nextQuantity);
+      if (result.success) {
+        router.refresh();
+        return;
+      }
+
+      toast.error(t('updateFailed'), {
+        description: result.error,
+      });
     });
   }
 
